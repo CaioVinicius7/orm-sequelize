@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
 
       // Recebe o relacionamento de outra tabela
       Turmas.belongsTo(models.Pessoas, {
-        foreignKey: "docent_id"
+        foreignKey: "docente_id"
       });
 
       Turmas.belongsTo(models.Niveis, {

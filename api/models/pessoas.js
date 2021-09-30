@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
 
       // Define o relacionamento em outra tabela
       Pessoas.hasMany(models.Turmas, {
-        foreignKey: "docent_id"
+        foreignKey: "docente_id"
       });
       
       Pessoas.hasMany(models.Matriculas, {
